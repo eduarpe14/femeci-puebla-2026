@@ -89,229 +89,7 @@
       color: #FFFFFF;
     }
 
-    /* Drive Banner */
-    .drive-banner {
-      background: #FFFFFF;
-      border: 2px solid var(--secondary);
-      border-radius: 12px;
-      padding: 1.2rem 1.5rem;
-      margin-top: 1.5rem;
-      margin-bottom: 2rem;
-      box-shadow: var(--shadow-md);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
-    .drive-banner-text {
-      flex: 1 1 300px;
-    }
-
-    .drive-banner-title {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    .drive-banner-desc {
-      font-size: 0.88rem;
-      color: var(--text-muted);
-      margin-top: 0.2rem;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: 0 auto 3rem auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Stats Grid */
-    .stats-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .stat-card {
-      background: var(--bg-card);
-      padding: 1.3rem 1rem;
-      border-radius: 12px;
-      border: 1px solid var(--border-color);
-      box-shadow: var(--shadow-sm);
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .stat-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-    }
-
-    .stat-number {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--primary);
-      display: block;
-      margin-bottom: 0.2rem;
-    }
-
-    .stat-label {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-
-    .stat-sub {
-      font-size: 0.75rem;
-      color: #64748B;
-      display: block;
-      margin-top: 0.2rem;
-    }
-
-    /* Section Styles */
-    .section-title {
-      font-size: 1.4rem;
-      font-weight: 700;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 1.2rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 2px solid var(--secondary);
-    }
-
-    .section-desc {
-      font-size: 0.95rem;
-      color: var(--text-muted);
-      margin-top: -0.8rem;
-      margin-bottom: 1.2rem;
-    }
-
-    /* Documents Grid */
-    .docs-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.2rem;
-      margin-bottom: 3rem;
-    }
-
-    .doc-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.4rem;
-      box-shadow: var(--shadow-sm);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.2s;
-    }
-
-    .doc-card.featured {
-      border: 2px solid var(--secondary);
-      background: linear-gradient(180deg, #FFFFFF 0%, var(--secondary-light) 100%);
-    }
-
-    .doc-header {
-      display: flex;
-      align-items: flex-start;
-      gap: 0.8rem;
-      margin-bottom: 0.8rem;
-    }
-
-    .pdf-icon {
-      background-color: #FEE2E2;
-      color: #DC2626;
-      font-weight: 800;
-      font-size: 0.75rem;
-      padding: 0.4rem 0.6rem;
-      border-radius: 6px;
-      border: 1px solid #FECACA;
-      flex-shrink: 0;
-    }
-
-    .doc-title {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: var(--text-main);
-      line-height: 1.35;
-    }
-
-    .doc-meta {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      margin-top: 0.2rem;
-    }
-
-    .doc-body {
-      font-size: 0.9rem;
-      color: var(--text-muted);
-      margin-bottom: 1.2rem;
-      flex-grow: 1;
-    }
-
-    .btn-group {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      padding: 0.65rem 1rem;
-      border-radius: 8px;
-      font-size: 0.88rem;
-      font-weight: 600;
-      text-decoration: none;
-      cursor: pointer;
-      transition: all 0.2s;
-    }
-
-    .btn-primary {
-      background-color: var(--primary);
-      color: #FFFFFF;
-      border: 1px solid var(--primary-dark);
-    }
-
-    .btn-primary:hover {
-      background-color: var(--primary-dark);
-      color: #FFFFFF;
-      box-shadow: var(--shadow-md);
-    }
-
-    .btn-secondary {
-      background-color: #FFFFFF;
-      color: var(--primary);
-      border: 1px solid var(--primary);
-    }
-
-    .btn-secondary:hover {
-      background-color: var(--primary);
-      color: #FFFFFF;
-    }
-
-    .btn-drive {
-      background-color: #0F9D58;
-      color: #FFFFFF;
-      border: 1px solid #0B8043;
-    }
-
-    .btn-drive:hover {
-      background-color: #0B8043;
-      color: #FFFFFF;
-    }
+    
 
     .btn-sm {
       padding: 0.45rem 0.8rem;
@@ -417,21 +195,6 @@
 
   <main>
 
-    <!-- Google Drive Banner -->
-    <div class="drive-banner">
-      <div class="drive-banner-text">
-        <div class="drive-banner-title">
-          <span>📁</span> Carpeta de Archivos en Google Drive
-        </div>
-        <div class="drive-banner-desc">
-          Accede a todos los documentos PDF originales directamente en la nube compartida de Google Drive para visualizarlos o descargarlos en lote.
-        </div>
-      </div>
-      <a href="https://drive.google.com/drive/folders/1BgqfyJvumW5SMpRNj2W6JldI1s2rILFI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-drive">
-        Abrir Carpeta en Google Drive ↗
-      </a>
-    </div>
-
     <!-- Métricas Oficiales del Evento -->
     <div class="stats-grid">
       <div class="stat-card">
@@ -484,9 +247,7 @@
           <a href="Listado_de_Ganadores_FEMECI_Puebla_2026.pdf" download class="btn btn-primary">
             ⬇️ Descargar PDF
           </a>
-          <a href="https://drive.google.com/drive/folders/1BgqfyJvumW5SMpRNj2W6JldI1s2rILFI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Ver en Drive ↗
-          </a>
+          
         </div>
       </div>
 
@@ -508,9 +269,7 @@
           <a href="Convocatoria_Oficial_FEMECI_Puebla_2026.pdf" download class="btn btn-secondary">
             ⬇️ Descargar PDF
           </a>
-          <a href="https://drive.google.com/drive/folders/1BgqfyJvumW5SMpRNj2W6JldI1s2rILFI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Ver en Drive ↗
-          </a>
+          
         </div>
       </div>
 
@@ -532,9 +291,7 @@
           <a href="Informe_General_FEMECI_2026.pdf" download class="btn btn-secondary">
             ⬇️ Descargar PDF
           </a>
-          <a href="https://drive.google.com/drive/folders/1BgqfyJvumW5SMpRNj2W6JldI1s2rILFI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Ver en Drive ↗
-          </a>
+          
         </div>
       </div>
 
@@ -556,9 +313,7 @@
           <a href="Reglas_de_Operacion_FEMECI_Puebla_2026.pdf" download class="btn btn-secondary">
             ⬇️ Descargar PDF
           </a>
-          <a href="https://drive.google.com/drive/folders/1BgqfyJvumW5SMpRNj2W6JldI1s2rILFI?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-            Ver en Drive ↗
-          </a>
+          
         </div>
       </div>
     </div>
