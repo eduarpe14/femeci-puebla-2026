@@ -126,9 +126,8 @@ Los documentos oficiales de soporte y resultados de la feria se encuentran integ
   - Versión PDF firmada: [[02_Proyectos/01_PORTAFOLIOS_PROYECTOS_CGICH/03_EN PROCESO/20261030_FEMECI/CONVOCATORIA FEMECI 2026/Convocatoria_FEMECI_Puebla_2026okCFIRMA.pdf|Convocatoria Oficial FEMECI Puebla 2026 (PDF Firmado)]]
   - Versión Markdown: [[02_Proyectos/01_PORTAFOLIOS_PROYECTOS_CGICH/03_EN PROCESO/20261030_FEMECI/CONVOCATORIA FEMECI 2026/Convocatoria_FEMECI_Puebla_2026.md|Convocatoria Oficial FEMECI Puebla 2026 (Texto Markdown)]]
 
-- **Informes Ejecutivos del Evento:**
+- **Informes Técnicos del Evento:**
   - Informe fotográfico y técnico: [[02_Proyectos/01_PORTAFOLIOS_PROYECTOS_CGICH/03_EN PROCESO/20261030_FEMECI/5 Informe FEMECI 2026.pdf|Informe General y Evidencias FEMECI 2026 (PDF)]]
-  - Presentación ejecutiva oficial: [[02_Proyectos/01_PORTAFOLIOS_PROYECTOS_CGICH/03_EN PROCESO/20261030_FEMECI/AP FERIA MEXICANA.pdf|Autorización Presupuestaria]]
 
 ---
 
