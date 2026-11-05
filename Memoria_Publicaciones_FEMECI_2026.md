@@ -44,7 +44,7 @@ La **Feria Mexicana de Ciencias e Ingenierías (FEMECI) Capítulo Puebla 2026** 
 - **Sede:** Centro de Vinculación de la Universidad Popular Autónoma del Estado de Puebla (UPAEP).
 - **Proyectos en concurso:** 79 proyectos de investigación (equipos de 1 a 3 estudiantes de media superior y superior).
 - **Proyectos en exhibición:** 30 proyectos de Instituciones de Educación Superior (IES) y Centros de Investigación.
-- **Población beneficiada directa:** Más de 350 beneficiarios directos (estudiantes concursantes, docentes asesores, comités evaluadores, expositores y asistentes a conversatorios).
+- **Población beneficiada directa:** Más de 600 beneficiarios directos (estudiantes concursantes, docentes asesores, comités evaluadores, expositores y asistentes a conversatorios).
 - **Instituciones representadas:** 25 instituciones educativas y centros de investigación públicos y privados de la entidad.
 - **Áreas evaluadas:** Agroindustria y Alimentos, Ciencias Ambientales, Ciencias Básicas, Ciencias Sociales y Humanidades, Química y Biología, Ingenierías y Tecnologías, Medicina y Ciencias de la Salud, y Sistemas Informáticos y Computacionales.
 - **Alcance Nacional:** Integración de la delegación oficial del Estado de Puebla para la etapa nacional de la FEMECI a celebrarse en marzo de 2027 en la ciudad de San Luis Potosí.

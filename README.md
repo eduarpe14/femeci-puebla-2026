@@ -21,7 +21,7 @@ Permite la descarga directa e inmediata de la documentación oficial, galería g
 
 Certamen estatal selectivo coordinado por el Gobierno del Estado a través de la **Secretaría de Ciencia, Humanidades, Tecnología e Información (SECIHTI)**, la **Coordinación General de Investigación Científica y Humanista** y la **Dirección de Modernización Educativa**:
 
-* **Población Beneficiada:** Más de **350 beneficiarios directos** (estudiantes concursantes, asesores académicos, comités evaluadores pares, expositores y asistentes a conversatorios).
+* **Población Beneficiada:** Más de **600 beneficiarios directos** (estudiantes concursantes, asesores académicos, comités evaluadores pares, expositores y asistentes a conversatorios).
 * **Proyectos en Concurso:** **79 proyectos de investigación** (integrados por equipos de 1 a 3 estudiantes de educación media superior y superior).
 * **Proyectos en Exhibición:** **30 proyectos de divulgación científica y tecnológica** presentados por Instituciones de Educación Superior y Centros de Investigación.
 * **Instituciones Participantes:** **25 instituciones educativas** públicas y privadas de la entidad.
