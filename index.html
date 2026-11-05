@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FEMECI Puebla 2026 — Memoria de Publicaciones, Resultados y Documentación</title>
+  <title>FEMECI Puebla 2026 — Memoria Oficial de Resultados y Cobertura de Medios | SECIHTI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary: #691C32; /* Guinda institucional Gobierno de Puebla */
+      --primary: #691C32;        /* Guinda institucional Gobierno de Puebla */
       --primary-dark: #4A1222;
-      --secondary: #BC955C; /* Dorado institucional */
-      --secondary-light: #F4EFE6;
-      --accent: #105F6E;
-      --text-main: #1F2937;
-      --text-muted: #4B5563;
+      --primary-light: #8A2542;
+      --secondary: #BC955C;      /* Dorado institucional */
+      --secondary-light: #FBF8F3;
+      --secondary-dark: #916F3D;
+      --accent: #0F4C5C;
+      --text-main: #1E293B;
+      --text-muted: #64748B;
       --bg-page: #F8FAFC;
       --bg-card: #FFFFFF;
       --border-color: #E2E8F0;
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 10px rgba(0, 0, 0, 0.07);
+      --shadow-lg: 0 12px 24px -4px rgba(0, 0, 0, 0.1);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
     }
 
     * {
@@ -28,96 +36,400 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Aptos", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background-color: var(--bg-page);
       color: var(--text-main);
       line-height: 1.6;
-      padding: 0;
+      -webkit-font-smoothing: antialiased;
     }
 
-    header {
-      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-      color: #FFFFFF;
-      padding: 2.5rem 1.5rem;
+    /* Top Utility Bar */
+    .gov-bar {
+      background-color: #4A1222;
+      color: #F8FAFC;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid var(--secondary);
+    }
+
+    .gov-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Banner Container */
+    .banner-wrapper {
+      width: 100%;
+      background: linear-gradient(135deg, #4A1222 0%, #691C32 100%);
+      box-shadow: var(--shadow-md);
+      overflow: hidden;
       border-bottom: 4px solid var(--secondary);
+      text-align: center;
     }
 
-    .header-container {
-      max-width: 1100px;
+    .banner-img {
+      width: 100%;
+      max-height: 380px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
       margin: 0 auto;
     }
 
-    .inst-badge {
-      display: inline-block;
-      background-color: rgba(188, 149, 92, 0.25);
+    /* Header / Hero Section */
+    .hero {
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      border-bottom: 1px solid var(--border-color);
+      padding: 2.5rem 1.5rem 2rem;
+    }
+
+    .hero-container {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .badge-inst {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--secondary-light);
+      color: var(--primary-dark);
       border: 1px solid var(--secondary);
-      color: #FDFBF7;
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      padding: 0.3rem 0.8rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.35rem 0.9rem;
       border-radius: 9999px;
-      margin-bottom: 0.8rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     h1 {
-      font-size: 2.2rem;
-      font-weight: 700;
-      line-height: 1.25;
-      margin-bottom: 0.5rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1.2;
+      margin-bottom: 0.6rem;
     }
 
-    .subtitle {
+    .hero-subtitle {
       font-size: 1.15rem;
-      color: #E2E8F0;
-      max-width: 850px;
-      margin-bottom: 1rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      max-width: 900px;
+      margin-bottom: 1.4rem;
     }
 
-    .meta-bar {
+    .hero-meta {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.2rem;
+      gap: 1.5rem;
       font-size: 0.9rem;
-      color: #CBD5E1;
-      padding-top: 0.8rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      color: var(--text-muted);
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-color);
     }
 
-    .meta-bar strong {
-      color: #FFFFFF;
+    .hero-meta strong {
+      color: var(--text-main);
     }
 
-    
-
-    .btn-sm {
-      padding: 0.45rem 0.8rem;
-      font-size: 0.82rem;
+    /* Main Container */
+    main {
+      max-width: 1140px;
+      margin: 2.5rem auto;
+      padding: 0 1.5rem;
     }
 
-    /* Links & Media Grid */
-    .links-grid {
+    /* Stats Grid */
+    .stats-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1.2rem;
       margin-bottom: 3rem;
     }
 
-    .link-card {
-      background: var(--bg-card);
+    .stat-card {
+      background: #FFFFFF;
       border: 1px solid var(--border-color);
-      border-radius: 12px;
-      padding: 1.3rem;
+      border-top: 4px solid var(--primary);
+      border-radius: var(--radius-md);
+      padding: 1.4rem 1.2rem;
+      text-align: center;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.25s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-top-color: var(--secondary);
+    }
+
+    .stat-number {
+      font-family: 'Outfit', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat-sub {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      line-height: 1.3;
+    }
+
+    /* Showcase Section (Cartel + Resumen) */
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 2rem;
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+      margin-bottom: 3rem;
+      box-shadow: var(--shadow-sm);
+      align-items: center;
+    }
+
+    .cartel-card {
+      position: relative;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 2px solid var(--secondary);
+    }
+
+    .cartel-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .cartel-card:hover .cartel-img {
+      transform: scale(1.02);
+    }
+
+    .showcase-content h2 {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    .showcase-content p {
+      font-size: 0.96rem;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      line-height: 1.65;
+    }
+
+    .showcase-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .highlight-item {
+      background: var(--bg-page);
+      border-left: 3px solid var(--secondary);
+      padding: 0.8rem 1rem;
+      border-radius: 4px;
+      font-size: 0.88rem;
+    }
+
+    .highlight-item strong {
+      color: var(--primary-dark);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    /* Section Headers */
+    .section-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.4rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--secondary);
+    }
+
+    .section-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.8rem;
+    }
+
+    /* Documents Grid */
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.4rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .doc-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
       box-shadow: var(--shadow-sm);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      transition: all 0.2s;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--secondary);
+    }
+
+    .doc-card.featured {
+      border: 2px solid var(--primary);
+      background: linear-gradient(180deg, #FFFFFF 0%, #FCF9F9 100%);
+    }
+
+    .doc-card.featured::before {
+      content: "OFICIAL";
+      position: absolute;
+      top: -11px;
+      right: 18px;
+      background: var(--primary);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.15rem 0.6rem;
+      border-radius: 4px;
+      letter-spacing: 0.5px;
+    }
+
+    .doc-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.8rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .pdf-badge {
+      background-color: #FEE2E2;
+      color: #B91C1C;
+      font-weight: 800;
+      font-size: 0.72rem;
+      padding: 0.35rem 0.55rem;
+      border-radius: 6px;
+      border: 1px solid #FECACA;
+      flex-shrink: 0;
+      letter-spacing: 0.5px;
+    }
+
+    .doc-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text-main);
+      line-height: 1.35;
+    }
+
+    .doc-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+    }
+
+    .doc-body {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1.4rem;
+      line-height: 1.55;
+      flex-grow: 1;
+    }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.8rem 1rem;
+      background: var(--primary);
+      color: #FFFFFF;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(105, 28, 50, 0.2);
+    }
+
+    .btn-download:hover {
+      background: var(--primary-light);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(105, 28, 50, 0.3);
+    }
+
+    .btn-download-sec {
+      background: #FFFFFF;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+      box-shadow: none;
+    }
+
+    .btn-download-sec:hover {
+      background: var(--primary);
+      color: #FFFFFF;
+    }
+
+    /* Links Grid (Prensa y Redes) */
+    .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.3rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .link-card {
+      background: #FFFFFF;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 1.4rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
     }
 
     .link-card:hover {
-      transform: translateY(-2px);
+      transform: translateY(-3px);
       box-shadow: var(--shadow-md);
       border-color: var(--secondary);
     }
@@ -126,66 +438,114 @@
       display: inline-block;
       background-color: #EFF6FF;
       color: #1D4ED8;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
-      padding: 0.2rem 0.5rem;
+      padding: 0.25rem 0.6rem;
       border-radius: 4px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     .badge-press {
       display: inline-block;
       background-color: #F0FDF4;
       color: #15803D;
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       font-weight: 700;
-      padding: 0.2rem 0.5rem;
+      padding: 0.25rem 0.6rem;
       border-radius: 4px;
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.6rem;
     }
 
     .link-outlet {
-      font-size: 1.05rem;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.1rem;
       font-weight: 700;
       color: var(--text-main);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.4rem;
     }
 
     .link-excerpt {
       font-size: 0.88rem;
       color: var(--text-muted);
-      margin-bottom: 1rem;
-      line-height: 1.45;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+      flex-grow: 1;
     }
 
-    footer {
-      background-color: #FFFFFF;
-      border-top: 1px solid var(--border-color);
-      padding: 2rem 1.5rem;
-      text-align: center;
+    .btn-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1rem;
+      background: #F8FAFC;
+      border: 1px solid var(--border-color);
+      color: var(--text-main);
       font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: var(--radius-sm);
+      transition: all 0.2s ease;
+    }
+
+    .btn-link:hover {
+      background: #FFFFFF;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Footer */
+    footer {
+      background: #FFFFFF;
+      border-top: 3px solid var(--secondary);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      font-size: 0.88rem;
       color: var(--text-muted);
+      line-height: 1.6;
     }
 
     footer strong {
-      color: var(--text-main);
+      color: var(--primary);
     }
 
-    @media (max-width: 640px) {
-      h1 { font-size: 1.7rem; }
-      .meta-bar { flex-direction: column; gap: 0.4rem; }
-      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    @media (max-width: 820px) {
+      .showcase-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      .cartel-card {
+        max-width: 320px;
+        margin: 0 auto;
+      }
+      .showcase-highlights {
+        text-align: left;
+      }
+      h1 { font-size: 1.8rem; }
+      .gov-bar { flex-direction: column; gap: 0.3rem; text-align: center; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="header-container">
-      <span class="inst-badge">SECIHTI • CGICH • DME | Expediente: SECIHTI/CGICH/DME/PROY-008/2026</span>
+  <!-- Barra de Gobierno -->
+  <div class="gov-bar">
+    <span>🏛️ GOBIERNO DEL ESTADO DE PUEBLA — SECIHTI</span>
+    <span>COORDINACIÓN GENERAL DE INVESTIGACIÓN CIENTÍFICA Y HUMANISTA</span>
+  </div>
+
+  <!-- Banner Oficial FEMECI -->
+  <div class="banner-wrapper">
+    <img src="BANNER_FEMECI.png" alt="Feria Mexicana de Ciencias e Ingenierías Puebla 2026" class="banner-img" onerror="this.onerror=null; this.src='BANNER_FEMECI.jpg';">
+  </div>
+
+  <!-- Hero Header -->
+  <header class="hero">
+    <div class="hero-container">
+      <span class="badge-inst">SECIHTI • CGICH • DME | Expediente: SECIHTI/CGICH/DME/PROY-008/2026</span>
       <h1>Feria Mexicana de Ciencias e Ingenierías</h1>
-      <div class="subtitle">FEMECI Capítulo Puebla 2026 — Memoria Oficial de Publicaciones, Cobertura de Medios y Resultados</div>
-      <div class="meta-bar">
+      <div class="hero-subtitle">FEMECI Capítulo Puebla 2026 — Memoria Oficial de Resultados, Cobertura de Medios y Documentación</div>
+      <div class="hero-meta">
         <div><strong>Unidad Responsable:</strong> Dirección de Modernización Educativa</div>
         <div><strong>Sede Estatal:</strong> Centro de Vinculación UPAEP (30 de octubre de 2026)</div>
         <div><strong>Fecha de corte:</strong> 5 de noviembre de 2026</div>
@@ -199,128 +559,142 @@
     <div class="stats-grid">
       <div class="stat-card">
         <span class="stat-number">>350</span>
-        <span class="stat-label">Beneficiarios</span>
-        <span class="stat-sub">Estudiantes, asesores y jurado</span>
+        <span class="stat-label">Beneficiarios Directos</span>
+        <span class="stat-sub">Estudiantes, asesores, comités evaluadores y jurado</span>
       </div>
       <div class="stat-card">
         <span class="stat-number">79</span>
         <span class="stat-label">Proyectos en Concurso</span>
-        <span class="stat-sub">Equipos de 1 a 3 estudiantes</span>
+        <span class="stat-sub">Equipos de 1 a 3 estudiantes (Media Superior y Superior)</span>
       </div>
       <div class="stat-card">
         <span class="stat-number">30</span>
         <span class="stat-label">Proyectos de Exhibición</span>
-        <span class="stat-sub">IES y Centros de Investigación</span>
+        <span class="stat-sub">Stands de IES y Centros de Investigación</span>
       </div>
       <div class="stat-card">
         <span class="stat-number">25</span>
         <span class="stat-label">Instituciones</span>
-        <span class="stat-sub">Públicas y Privadas</span>
+        <span class="stat-sub">Instituciones públicas y privadas del Estado</span>
       </div>
       <div class="stat-card">
         <span class="stat-number">2027</span>
         <span class="stat-label">Fase Nacional</span>
-        <span class="stat-sub">San Luis Potosí (Marzo)</span>
+        <span class="stat-sub">San Luis Potosí (Acreditados 1ros Lugares)</span>
       </div>
     </div>
 
-    <!-- Sección 1: Documentos Oficiales para Descarga Directa -->
+    <!-- Spotlight del Evento (Cartel + Resumen) -->
+    <div class="showcase-grid">
+      <div class="cartel-card">
+        <img src="Cartel_FEMECI.jpeg" alt="Cartel Oficial FEMECI Puebla 2026" class="cartel-img">
+      </div>
+      <div class="showcase-content">
+        <h2>Plataforma Estatal para el Talento Científico Juvenil</h2>
+        <p>
+          La **Feria Mexicana de Ciencias e Ingenierías (FEMECI) Puebla 2026** es la máxima cumbre estatal de divulgación, evaluación e impulso al desarrollo científico y humanista en Puebla. Coordinada por la Secretaría de Ciencia, Humanidades, Tecnología e Información (SECIHTI) y la Dirección de Modernización Educativa, reúne las propuestas más destacadas en ocho áreas del conocimiento.
+        </p>
+        <p>
+          Los proyectos ganadores obtuvieron su acreditación oficial para representar al Estado de Puebla en la fase nacional de la FEMECI a celebrarse en marzo de 2027 en la ciudad de San Luis Potosí.
+        </p>
+        <div class="showcase-highlights">
+          <div class="highlight-item">
+            <strong>🥇 1er Lugar Media Superior</strong>
+            <em>MeXquite</em> — Bachillerato General Estatal Quetzalcóatl (Tehuacán).
+          </div>
+          <div class="highlight-item">
+            <strong>🥇 1er Lugar Superior</strong>
+            <em>Bioactivos de Loeselia mexicana</em> — Facultad de Medicina BUAP (Teziutlán).
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección 1: Documentación Oficial para Descarga Inmediata -->
     <h2 class="section-title">📂 Documentos Oficiales y Resultados (Descarga Directa)</h2>
-    <p class="section-desc">Todos los archivos PDF oficiales se encuentran almacenados localmente y disponibles para descarga inmediata:</p>
+    <p class="section-desc">Todos los archivos PDF se descargan de forma inmediata y directa desde la plataforma oficial:</p>
 
     <div class="docs-grid">
-      <!-- Card 1: Ganadores Oficiales -->
+      <!-- Card 1: Listado de Ganadores -->
       <div class="doc-card featured">
         <div>
           <div class="doc-header">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-badge">PDF</span>
             <div>
-              <div class="doc-title">Listado Oficial de Ganadores FEMECI Puebla 2026</div>
-              <div class="doc-meta">2 páginas • 143 kB • Dictamen y Primeros Lugares</div>
+              <div class="doc-title">Listado Oficial de Ganadores FEMECI 2026</div>
+              <div class="doc-meta">2 páginas • 143 kB • Dictamen Oficial</div>
             </div>
           </div>
           <div class="doc-body">
-            Dictamen oficial con los proyectos acreditados para la fase nacional en San Luis Potosí 2027. Incluye los primeros lugares en Media Superior (Bachillerato Quetzalcóatl de Tehuacán) y Superior (Facultad de Medicina BUAP).
+            Dictamen oficial colegiado con los proyectos acreditados para la fase nacional en San Luis Potosí 2027. Incluye los primeros lugares en Media Superior y Superior.
           </div>
         </div>
-        <div class="btn-group">
-          <a href="Listado_de_Ganadores_FEMECI_Puebla_2026.pdf" download class="btn btn-primary">
-            ⬇️ Descargar PDF
-          </a>
-          
-        </div>
+        <a href="Listado_de_Ganadores_FEMECI_Puebla_2026.pdf" download class="btn-download">
+          ⬇️ Descargar Listado Oficial (PDF)
+        </a>
       </div>
 
       <!-- Card 2: Convocatoria Oficial -->
       <div class="doc-card">
         <div>
           <div class="doc-header">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-badge">PDF</span>
             <div>
               <div class="doc-title">Convocatoria Oficial FEMECI Puebla 2026</div>
               <div class="doc-meta">Documento firmado • 608 kB • SECIHTI</div>
             </div>
           </div>
           <div class="doc-body">
-            Bases completas, categorías temáticas, requisitos metodológicos y cronograma de evaluación de la edición 2026.
+            Bases completas, categorías temáticas, requisitos metodológicos, normatividad de ética y cronograma de evaluación de la edición estatal 2026.
           </div>
         </div>
-        <div class="btn-group">
-          <a href="Convocatoria_Oficial_FEMECI_Puebla_2026.pdf" download class="btn btn-secondary">
-            ⬇️ Descargar PDF
-          </a>
-          
-        </div>
+        <a href="Convocatoria_Oficial_FEMECI_Puebla_2026.pdf" download class="btn-download btn-download-sec">
+          ⬇️ Descargar Convocatoria (PDF)
+        </a>
       </div>
 
       <!-- Card 3: Informe General y Evidencias -->
       <div class="doc-card">
         <div>
           <div class="doc-header">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-badge">PDF</span>
             <div>
               <div class="doc-title">Informe General del Evento FEMECI 2026</div>
               <div class="doc-meta">31 páginas • 3.6 MB • Evidencias y Memoria</div>
             </div>
           </div>
           <div class="doc-body">
-            Reporte técnico oficial con la memoria gráfica, registro de los 79 equipos en concurso, 30 proyectos de exhibición y acreditaciones. Elaborado por DME.
+            Reporte técnico con la memoria gráfica, registro de los 79 proyectos en concurso, 30 de exhibición, instituciones participantes y desarrollo del certamen.
           </div>
         </div>
-        <div class="btn-group">
-          <a href="Informe_General_FEMECI_2026.pdf" download class="btn btn-secondary">
-            ⬇️ Descargar PDF
-          </a>
-          
-        </div>
+        <a href="Informe_General_FEMECI_2026.pdf" download class="btn-download btn-download-sec">
+          ⬇️ Descargar Informe General (PDF)
+        </a>
       </div>
 
       <!-- Card 4: Reglas de Operación -->
       <div class="doc-card">
         <div>
           <div class="doc-header">
-            <span class="pdf-icon">PDF</span>
+            <span class="pdf-badge">PDF</span>
             <div>
               <div class="doc-title">Reglas de Operación Oficiales</div>
               <div class="doc-meta">Marco Normativo • 466 kB • DME</div>
             </div>
           </div>
           <div class="doc-body">
-            Lineamientos normativos aplicables para la acreditación de proyectos, comités de ética, seguridad científica y deliberación colegiada de jurados.
+            Lineamientos normativos para la acreditación de proyectos, comités de revisión científica, seguridad en protocolos y deliberación de jurados pares.
           </div>
         </div>
-        <div class="btn-group">
-          <a href="Reglas_de_Operacion_FEMECI_Puebla_2026.pdf" download class="btn btn-secondary">
-            ⬇️ Descargar PDF
-          </a>
-          
-        </div>
+        <a href="Reglas_de_Operacion_FEMECI_Puebla_2026.pdf" download class="btn-download btn-download-sec">
+          ⬇️ Descargar Reglas de Operación (PDF)
+        </a>
       </div>
     </div>
 
-    <!-- Sección 2: Redes Sociales (Facebook) -->
+    <!-- Sección 2: Publicaciones en Redes Sociales -->
     <h2 class="section-title">📱 Publicaciones en Redes Sociales (Facebook)</h2>
-    <p class="section-desc">Reportadas directamente en el seguimiento de medios por la C. Miriam Reyes (SECIHTI):</p>
+    <p class="section-desc">Reportes de difusión oficial y cobertura del evento en redes institucionales:</p>
 
     <div class="links-grid">
       <div class="link-card">
@@ -328,11 +702,11 @@
           <span class="badge-social">Facebook</span>
           <div class="link-outlet">Centinela Noticias Puebla</div>
           <div class="link-excerpt">
-            <em>«#Entérate #Puebla #CentinelaNoticias 👨🏽🤝 FEMECI 2026 coloca el talento joven en el centro de la ciencia...»</em>
-            <br><small style="color:#64748B;">Difusión de la inauguración y exhibición de proyectos en el Centro de Vinculación UPAEP.</small>
+            <em>«#Entérate #Puebla #CentinelaNoticias 👨🏽🤝 FEMECI 2026 coloca el talento joven en el centro de la ciencia...»</em><br>
+            <small style="color:#64748B;">Difusión de la inauguración y exhibición de proyectos en el Centro de Vinculación UPAEP.</small>
           </div>
         </div>
-        <a href="https://www.facebook.com/share/p/19n88GeUbM/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://www.facebook.com/share/p/19n88GeUbM/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Abrir en Facebook ↗
         </a>
       </div>
@@ -342,19 +716,19 @@
           <span class="badge-social">Facebook</span>
           <div class="link-outlet">Puebla en la Noticia</div>
           <div class="link-excerpt">
-            <em>«*FEMECI 2026 COLOCA EL TALENTO JOVEN EN EL CENTRO DE LA CIENCIA* - Participan estudiantes con proyectos de investigación...»</em>
-            <br><small style="color:#64748B;">Reporte noticioso sobre el fomento a vocaciones científicas y apoyo gubernamental.</small>
+            <em>«*FEMECI 2026 COLOCA EL TALENTO JOVEN EN EL CENTRO DE LA CIENCIA* - Participan estudiantes con proyectos de investigación...»</em><br>
+            <small style="color:#64748B;">Reporte noticioso sobre el fomento a vocaciones científicas y apoyo de la SECIHTI.</small>
           </div>
         </div>
-        <a href="https://www.facebook.com/share/p/14tq5MCzzwi/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://www.facebook.com/share/p/14tq5MCzzwi/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Abrir en Facebook ↗
         </a>
       </div>
     </div>
 
-    <!-- Sección 3: Cobertura en Prensa Digital y Medios Informativos -->
+    <!-- Sección 3: Cobertura en Prensa Digital -->
     <h2 class="section-title">🌐 Cobertura en Prensa Digital y Medios Informativos</h2>
-    <p class="section-desc">Artículos de prensa y portales informativos que han documentado el certamen estatal:</p>
+    <p class="section-desc">Artículos de prensa y portales universitarios que han documentado el certamen estatal:</p>
 
     <div class="links-grid">
       <!-- SICOM -->
@@ -367,7 +741,7 @@
             Crónica oficial del Gobierno del Estado sobre la participación estudiantil y vinculación con la SECIHTI.
           </div>
         </div>
-        <a href="https://sicomnoticias.mx/femeci-2026-coloca-el-talento-joven-en-el-centro-de-la-ciencia/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://sicomnoticias.mx/femeci-2026-coloca-el-talento-joven-en-el-centro-de-la-ciencia/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -379,10 +753,10 @@
           <div class="link-outlet">Diario de Puebla</div>
           <div class="link-excerpt">
             <strong>Inauguran feria de ciencias e ingenierías 2026</strong><br>
-            Apertura formal de las actividades y exposición de prototipos en el Centro de Vinculación.
+            Reseña sobre la ceremonia de apertura y mensaje a las 25 instituciones educativas de la entidad.
           </div>
         </div>
-        <a href="https://diariodepuebla.com.mx/component/k2/item/49343-inauguran-feria-de-ciencias-e-ingenierias-2026" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://diariodepuebla.com.mx/component/k2/item/49343-inauguran-feria-de-ciencias-e-ingenierias-2026" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -393,11 +767,11 @@
           <span class="badge-press">Prensa Estatal</span>
           <div class="link-outlet">Periódico Enfoque</div>
           <div class="link-excerpt">
-            <strong>FEMECI Puebla 2026 reúne proyectos científicos</strong><br>
-            Detalle de las 8 disciplinas analizadas por evaluadores y el pase a la etapa nacional.
+            <strong>FEMECI Puebla 2026 reúne a 80 estudiantes con 30 proyectos científicos</strong><br>
+            Detalle sobre las 8 áreas del conocimiento evaluadas por comités de pares académicos.
           </div>
         </div>
-        <a href="https://www.periodicoenfoque.com.mx/puebla/femeci-puebla-2026-reune-a-80-estudiantes-con-30-proyectos-cientificos" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://www.periodicoenfoque.com.mx/puebla/femeci-puebla-2026-reune-a-80-estudiantes-con-30-proyectos-cientificos" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -405,14 +779,14 @@
       <!-- Primera Plana Puebla -->
       <div class="link-card">
         <div>
-          <span class="badge-press">Prensa Estatal</span>
+          <span class="badge-press">Portal Informativo</span>
           <div class="link-outlet">Primera Plana Puebla</div>
           <div class="link-excerpt">
             <strong>FEMECI 2026 coloca el talento joven en el centro de la ciencia</strong><br>
-            Reconocimiento al ecosistema de investigación y la contribución al desarrollo de la juventud poblana.
+            Análisis del certamen como plataforma para proponer soluciones a problemáticas sociales de Puebla.
           </div>
         </div>
-        <a href="https://primeraplanapuebla.com/gobierno/femeci-2026-coloca-el-talento-joven-en-el-centro-de-la-ciencia/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://primeraplanapuebla.com/gobierno/femeci-2026-coloca-el-talento-joven-en-el-centro-de-la-ciencia/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -420,14 +794,14 @@
       <!-- Soy Universitario -->
       <div class="link-card">
         <div>
-          <span class="badge-press">Portal Especializado</span>
+          <span class="badge-press">Comunidad Universitaria</span>
           <div class="link-outlet">Soy Universitario</div>
           <div class="link-excerpt">
-            <strong>FEMECI 2026 reúne a jóvenes investigadores de Puebla</strong><br>
-            Cobertura centrada en la vinculación universitaria y los conversatorios de inteligencia artificial y ética.
+            <strong>FEMECI 2026 reúne a 80 jóvenes investigadores de Puebla</strong><br>
+            Cobertura especial sobre los conversatorios temáticos de inteligencia artificial, ética y aprendizaje.
           </div>
         </div>
-        <a href="https://soyuniversitario.com/femeci-2026-reune-a-80-jovenes-investigadores-de-puebla/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://soyuniversitario.com/femeci-2026-reune-a-80-jovenes-investigadores-de-puebla/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -435,14 +809,14 @@
       <!-- UPRESS UPAEP -->
       <div class="link-card">
         <div>
-          <span class="badge-press">Institucional Universitario</span>
-          <div class="link-outlet">UPRESS UPAEP (Sede)</div>
+          <span class="badge-press">Universidad Sede</span>
+          <div class="link-outlet">UPRESS UPAEP</div>
           <div class="link-excerpt">
             <strong>UPAEP abrió sus puertas al talento científico juvenil en Puebla</strong><br>
-            Reseña de la institución sede sobre la rigurosidad de los comités evaluadores y las instalaciones.
+            Perspectiva de la sede anfitriona destacando el jurado evaluador multidisciplinario.
           </div>
         </div>
-        <a href="https://upress.upaep.mx/secciones/investigacion/17817-upaep-abrio-sus-puertas-al-talento-cientifico-juvenil-en-puebla" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://upress.upaep.mx/secciones/investigacion/17817-upaep-abrio-sus-puertas-al-talento-cientifico-juvenil-en-puebla" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
@@ -454,20 +828,27 @@
           <div class="link-outlet">Opinión Poblana</div>
           <div class="link-excerpt">
             <strong>FEMECI 2026</strong><br>
-            Reseña informativa sobre el compromiso gubernamental de impulso a las vocaciones científicas tempranas.
+            Reseña editorial sobre la importancia del certamen científico estatal coordinado por la SECIHTI.
           </div>
         </div>
-        <a href="https://opinionpoblana.com/femeci-2026/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+        <a href="https://opinionpoblana.com/femeci-2026/" target="_blank" rel="noopener noreferrer" class="btn-link">
           Leer Nota Completa ↗
         </a>
       </div>
     </div>
+
   </main>
 
+  <!-- Pie Institucional -->
   <footer>
-    <p><strong>Gobierno del Estado de Puebla</strong> • Secretaría de Ciencia, Humanidades, Tecnología e Innovación (SECIHTI)</p>
-    <p>Coordinación General de Investigación Científica y Humanista • Dirección de Modernización Educativa</p>
-    <p style="margin-top: 0.5rem; font-size: 0.78rem; color: #94A3B8;">Memoria Oficial de Cobertura y Resultados — Carpeta Compartible FEMECI 2026</p>
+    <p>
+      <strong>Secretaría de Ciencia, Humanidades, Tecnología e Información (SECIHTI)</strong><br>
+      Coordinación General de Investigación Científica y Humanista • Dirección de Modernización Educativa<br>
+      Gobierno del Estado de Puebla — Expediente: <code>SECIHTI/CGICH/DME/PROY-008/2026</code>
+    </p>
+    <p style="margin-top: 0.8rem; font-size: 0.8rem; color: #94A3B8;">
+      Memoria Oficial de Cobertura, Prensa y Resultados — FEMECI Capítulo Puebla 2026
+    </p>
   </footer>
 
 </body>
